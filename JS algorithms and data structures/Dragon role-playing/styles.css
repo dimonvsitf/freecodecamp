@@ -9,9 +9,12 @@ body {
   background-color: #252540; /* Dark gray for a cleaner container look */
   padding: 20px;
   margin: 20px auto;
-  width: 600px;
   border-radius: 10px; /* Rounded corners */
-  background-color: rgba(0, 0, 0, 0.8); /* Black with slight transparency */
+  background-color: white; /* Black with slight transparency */
+  width: 440px;
+  max-width: 500px;
+  max-height: 100vh;
+  color: #ffffff;
 }
 
 button {
@@ -33,14 +36,7 @@ button:hover {
     padding: 10px;
   }
   
-  #game {
-    max-width: 500px;
-    max-height: 100vh;
-    background-color: #ffffff;
-    color: #ffffff;
-    margin: 30px auto 0px;
-    padding: 10px;
-  }
+  
   
   #controls {
     margin-top: 20px;

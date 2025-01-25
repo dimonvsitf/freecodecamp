@@ -392,3 +392,18 @@ function setSoundVolumes() {
 
 // Call this function once when the game starts
 setSoundVolumes();
+
+// Select the town music element
+const townMusic = document.querySelector("#townSquareSound");
+
+// Function to start the town music
+function startTownMusic() {
+  townMusic.play().catch((error) => {
+    console.log("Autoplay blocked:", error);
+  });
+}
+
+// Listen for user interaction (click, keypress, etc.)
+document.body.addEventListener("click", () => {
+  startTownMusic();
+}, { once: true }); // Runs only once
