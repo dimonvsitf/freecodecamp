@@ -3,28 +3,50 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
     <title>RPG - Dragon Repeller</title>
   </head>
   <body>
     <div id="game">
       <div id="stats">
+        
+        <span class="stat">Health: <strong><span id="playerHealthText">100</span></strong></span>
+        <div class="health-container">
+          <div id='playerHealthBar'> </div>   
+        </div>     
         <span class="stat">XP: <strong><span id="xpText">0</span></strong></span>
-        <span class="stat">Health: <strong><span id="healthText">100</span></strong></span>
         <span class="stat">Gold: <strong><span id="goldText">50</span></strong></span>
+      </div>
+      <img id="gameImage" src="./images/town.png" alt="Game Visual"/>
+      <div id="text">
+        Welcome to Dragon Repeller. You must defeat the dragon that is preventing people from leaving the town. You are in the town square. Where do you want to go? Use the buttons above.
       </div>
       <div id="controls">
         <button id="button1">Go to store</button>
         <button id="button2">Go to cave</button>
         <button id="button3">Fight dragon</button>
       </div>
+      
       <div id="monsterStats">
         <span class="stat">Monster Name: <strong><span id="monsterName"></span></strong></span>
-        <span class="stat">Health: <strong><span id="monsterHealth"></span></strong></span>
+        <div class="health-container">
+          <div id='monsterHealthBar'> </div>
+        </div>
+        <span class="stat">Health: <strong><span id="monsterHealthText"></span></strong></span>
       </div>
-      <div id="text">
-        Welcome to Dragon Repeller. You must defeat the dragon that is preventing people from leaving the town. You are in the town square. Where do you want to go? Use the buttons above.
-      </div>
+      
     </div>
     <script src="./script.js"></script>
+    <!-- <audio id="backgroundMusic" src="./sounds/background.mp3" loop></audio> -->
+    <audio id="attackSound" src="./sounds/attack.mp3"></audio>
+    <audio id="victorySound" src="./sounds/victory.mp3"></audio>
+    <audio id="loseSound" src="./sounds/lose.mp3"></audio>
+    <audio id="dodgeSound" src="./sounds/dodge.mp3"></audio>
+    <audio id="monsterHitSound" src="./sounds/monsterHitSound.mp3"></audio>
+    <audio id="caveSound" src="./sounds/cave.mp3"></audio>
+    <audio id="storeSound" src="./sounds/store.mp3"></audio>
+    <audio id="townSquareSound" volume="0.5" src="./sounds/town.mp3"></audio>
+    <audio id="fightSound" volume="0" src="./sounds/fight.mp3"></audio>
+    <audio id="eeSound" src="./sounds/ee.mp3"></audio>
   </body>
 </html>
