@@ -51,7 +51,7 @@ Welcome to **Dragon Repeller**, a simple browser-based role-playing game where y
 
 ### Play Online
 You can play the game online using the following link:
-[Dragon Repeller RPG](https://USERNAME.github.io/dragon-rpg/)
+[Dragon Repeller RPG](https://dimonvsitf.github.io/dragon-rpg/)
 
 ### Run Locally
 To run the game locally on your computer:
