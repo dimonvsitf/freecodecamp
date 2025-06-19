@@ -3,6 +3,7 @@
     <title> Pokedex-like app</title>
     <meta charset='utf-8'>
     <meta content = 'width=device-width, initial-scale=1.0' name="viewport">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel='stylesheet' href='./styles.css'>  
   </head>
 
@@ -16,18 +17,22 @@
       <article class="creature-card">
         <h2 id="creature-name"></h2>
         <p><span class="label">ID:</span> <span id="creature-id"></span></p>
-        <p><span class="label">Weight:</span> <span id="weight"></span></p>
-        <p><span class="label">Height:</span> <span id="height"></span></p>
-        <p><span class="label">Special:</span> <span id="special"></span></p>
         <p><span class="label">Types:</span>
           <span id="types"></span>
         </p>
+        <p><span class="label">Weight:</span> <span id="weight"></span></p>
+        <p><span class="label">Height:</span> <span id="height"></span></p>
+        <p><span class="label">Speed:</span> <span id="speed"></span></p>
+        
         <p><span class="label">HP:</span> <span id="hp"></span></p>
         <p><span class="label">Attack:</span> <span id="attack"></span></p>
         <p><span class="label">Defense:</span> <span id="defense"></span></p>
         <p><span class="label">Special Attack:</span> <span id="special-attack"></span></p>
         <p><span class="label">Special Defense:</span> <span id="special-defense"></span></p>
-        <p><span class="label">Speed:</span> <span id="speed"></span></p>
+        <p class="special-row">
++      <span class="label">Special:</span>
++      <span id="special"></span>
++    </p>
       </article>
 
       <section id='result'></section>
