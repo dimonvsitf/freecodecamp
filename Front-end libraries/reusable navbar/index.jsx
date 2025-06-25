@@ -19,4 +19,29 @@ export const Navbar = () => {
       </ul>
     </nav>
   )
-}
+};
+
+export const Footer = () => {
+  return (
+    <footer className='footer'>
+      <p>2025 All rights reserved ©.</p>
+      <ul>
+        <li>
+          <a href='#'>About</a>
+        </li>
+        <li>
+          <a href='#'>Team
+          </a>
+        </li>
+      </ul>
+      <ul>
+        <li><a href='#'>Privacy Policy</a></li>
+        <li><a href='#'>Terms and Conditions</a></li>
+      </ul>
+      <ul>
+        <li>Built in 🇦🇪</li>
+        <li>Registered in BVA</li>
+      </ul>
+    </footer>
+  )
+};

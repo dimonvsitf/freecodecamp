@@ -79,8 +79,52 @@ button:hover {
   }
 }
 
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  footer ul {
+    margin-bottom: 20px;
+  }
+}
+
 .navbar ul .nav-item:hover .sub-menu,
 .navbar ul .nav-item:focus-within .sub-menu {
   visibility: visible;
   opacity: 1;
+}
+
+footer {
+  background-color: var(--black);
+  color: var(--white);
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start; /* better alignment for stacked list items */
+  padding: 20px;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+footer ul {
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  list-style: none;
+  padding: 5px 0;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: var(--white);
+  display: block;
+  padding: 5px 0;
+}
+
+footer ul li a:hover {
+  background-color: var(--dark-purple);
 }
